@@ -1,0 +1,99 @@
+:root{
+    font: 'Open Sans'
+}
+
+html {
+    height: 100%
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container#webpage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.container#navigation{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.container#rightnav, .container#rightfooter{
+    justify-content: flex-end;
+}
+
+.container#navigation .item, .container#footer .item {
+    padding: 0px 10px;
+    margin: 2px 5px;
+}
+
+.container#navigation .item :hover{
+    text-decoration: underline;
+}
+
+.container#footer .item :hover{
+    text-decoration: underline;
+}
+
+
+
+#leftnav .item {
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.container#logo {
+    justify-content: space-around;
+    margin: 50px 0px 10px;
+}
+
+.container#searchform {
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.container#searchform .container{
+    justify-content: center;
+    width: 100%;
+}
+
+.container#search input{
+    justify-content: center;
+    max-width: 560px;
+    height: 39px;
+    border-radius: 19.5px;
+
+}
+
+.container#searchform button{
+    padding: 10px 16px;
+    margin: 11px 4px;
+    min-width: 108.5px;
+    min-height: 34px;
+    background-color: #f8f9fa;
+    border-color: white;
+    outline: none;
+}
+
+input {
+    width: 100%;
+}
+
+footer{
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 350px;
+}
+
+
+
+
+
