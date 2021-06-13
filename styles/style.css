@@ -1,5 +1,5 @@
 :root{
-    font: 'Open Sans'
+    font-family: Roboto, serif;
 }
 
 html {
@@ -32,17 +32,35 @@ html {
 .container#navigation .item, .container#footer .item {
     padding: 0px 10px;
     margin: 2px 5px;
+    display: flex;
 }
 
-.container#navigation .item :hover{
+.item#signIn{
+    background-color: #1a73e8;
+    border-radius: 5px;
+    height: 60%;
+    width: 80px;
+    align-self: center;
+}
+
+.item#signIn h4 {
+    color: white;
+    padding-left: 20px;
+    align-self: center;
+}
+
+.material-icons{
+    align-self: center;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+h4:hover{
     text-decoration: underline;
 }
-
-.container#footer .item :hover{
-    text-decoration: underline;
-}
-
-
 
 #leftnav .item {
     padding: 10px;
@@ -65,22 +83,33 @@ html {
     width: 100%;
 }
 
-.container#search input{
+input{
     justify-content: center;
     max-width: 560px;
     height: 39px;
     border-radius: 19.5px;
-
+    outline: none;
+    border-color:rgb(97, 93, 93);
+    border-style: solid;
 }
+
+
 
 .container#searchform button{
     padding: 10px 16px;
     margin: 11px 4px;
     min-width: 108.5px;
     min-height: 34px;
-    background-color: #f8f9fa;
+    background-color: white;
+    border-radius: 10px;
     border-color: white;
-    outline: none;
+    border-style: solid;
+}
+
+.container#searchform button:hover{
+    border: active;
+    border-color: rgb(233, 230, 230);
+    border-width: 2px;
 }
 
 input {
@@ -90,7 +119,7 @@ input {
 footer{
     width: 100%;
     justify-content: space-between;
-    margin-top: 350px;
+    margin-top: 300px;
 }
 
 
